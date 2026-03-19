@@ -3,6 +3,8 @@
 
 <!-- sisu -->
 <div class="container">
+    <h2>Adminni ala</h2>
+    <a href="lisa.php" class="btn btn-success">+ Lisa auto</a>
     <div class="row row-cols-1 row-cols-md-4 g-4">
 <!-- üks auto -->
 <?php
@@ -17,7 +19,6 @@
     $valjund = mysqli_query($yhendus, $paring); //saadan päringu andmebaasi
 
 ?>
-<h2>Adminni ala</h2>
 
 <table class="table">
   <thead>
@@ -41,7 +42,7 @@
   <tbody>
     <?php
         while($rida = mysqli_fetch_assoc($valjund)){       //sikutan vastuse alla
-            // var_dump($rida);                            //kuvan testvastuse
+            // var_dump($rida);                       //kuvan testvastuse
     ?>
     <tr>
       <th scope="row"><?php echo $rida["id"]; ?></th>
@@ -56,8 +57,8 @@
       <td><?php echo $rida["price"]; ?></td>
       <td><?php echo $rida["price"]; ?></td>
       <td><?php echo $rida["price"]; ?></td>
-      <td><a href="kustuta.php" class="btn btn-danger">Kustuta</a></td>
-      <td><a href="muuda.php" class="btn btn-warning">Muuda</a></td>
+      <td><a href="kustuta.php?delid=<?= $rida["id"]; ?>" class="btn btn-danger">Kustuta</a></td>
+      <td><a href="muuda.php?editid=<?= $rida["id"]; ?>" class="btn btn-warning">Muuda</a></td>
     </tr>
 
     <?php } ?>
