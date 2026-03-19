@@ -24,6 +24,14 @@
       <th scope="col">Mark</th>
       <th scope="col">Mudel</th>
       <th scope="col">Hind</th>
+      <th scope="col">Hind</th>
+      <th scope="col">Hind</th>
+      <th scope="col">Hind</th>
+      <th scope="col">Hind</th>
+      <th scope="col">Hind</th>
+      <th scope="col">Hind</th>
+      <th scope="col">Hind</th>
+      <th scope="col">Hind</th>
     </tr>
   </thead>
   <tbody>
@@ -35,6 +43,14 @@
       <th scope="row"><?php echo $rida["id"]; ?></th>
       <td><?php echo $rida["mark"]; ?></td>
       <td><?php echo $rida["model"]; ?></td>
+      <td><?php echo $rida["price"]; ?></td>
+      <td><?php echo $rida["price"]; ?></td>
+      <td><?php echo $rida["price"]; ?></td>
+      <td><?php echo $rida["price"]; ?></td>
+      <td><?php echo $rida["price"]; ?></td>
+      <td><?php echo $rida["price"]; ?></td>
+      <td><?php echo $rida["price"]; ?></td>
+      <td><?php echo $rida["price"]; ?></td>
       <td><?php echo $rida["price"]; ?></td>
     </tr>
 
