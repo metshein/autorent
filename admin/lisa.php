@@ -1,6 +1,14 @@
 <?php include('../config.php'); ?>
 <?php include('../header.php'); ?>
 
+<?php
+    if(!empty($_GET)){
+       $mark = $_GET['mark'];
+
+        echo $mark; 
+    }
+?>
+
 <!-- sisu -->
 <div class="container">
     <h2>Auto lisamine</h2>
