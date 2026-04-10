@@ -57,9 +57,15 @@
 
         $paring = "UPDATE cars SET mark = '".$mark."', model = '".$model."', engine = '".$engine."', fuel = '".$fuel."', price = '".$price."', year = '".$year."', transmission = '".$transmission."', seats = '".$seats."', description = '".$description."', status = '".$status."' WHERE cars.id = ".$id."";
 
-        print_r($paring);
+        // print_r($paring);
 
-        // $valjund = mysqli_query($yhendus, $paring);
+        $valjund = mysqli_query($yhendus, $paring);
+        $tulemus = mysqli_affected_rows($yhendus);
+        if ($tulemus == 1) {
+            header("Location: index.php?msg=uuendatud");
+        } else {
+            echo "Kirjet ei lisatud";
+        }
 
 
     }

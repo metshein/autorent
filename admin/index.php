@@ -10,7 +10,7 @@
 <?php
     // sõnumi kuvamine
     if(isset($_GET['msg'])){
-      echo '<div class="alert alert-success" role="alert">Andmed edukalt lisatud!</div>';
+      echo '<div class="alert alert-success" role="alert"> Kõik on hästi! </div>';
     }
 
 
