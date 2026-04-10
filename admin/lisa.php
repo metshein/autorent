@@ -4,8 +4,17 @@
 <?php
     if(!empty($_GET)){
        $mark = $_GET['mark'];
+       $model = $_GET['model'];
+       $engine = $_GET['engine'];
+       $fuel = $_GET['fuel'];
+       $price = $_GET['price'];
 
-        echo $mark; 
+       $year = $_GET['year'];
+       $transmission = $_GET['transmission'];
+       $seats = $_GET['seats'];
+       $description = $_GET['description'];
+       $status = $_GET['status'];
+
     }
 ?>
 
